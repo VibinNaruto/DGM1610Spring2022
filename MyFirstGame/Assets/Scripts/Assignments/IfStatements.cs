@@ -75,7 +75,7 @@ public class IfStatements : MonoBehaviour
             Debug.Log("You have the" + system + "Xbox");
         }
         */
-         /*
+         /* If statement # 5 
         if (beast == "orange")
         {
             Debug.Log("You have" + beast + "9 tailed beast");

@@ -11,7 +11,7 @@ public class MoveAndShoot : MonoBehaviour
     private Transform target;
 
     private float shotDelay; 
-    private float startDelay;
+    public float startDelay;
 
 
     public GameObject projectile;
@@ -42,6 +42,7 @@ public class MoveAndShoot : MonoBehaviour
         if(shotDelay <= 0)
         {
             Instantiate(projectile, transform.position, Quaternion.identity);
+            shotDelay = startDelay;
         }
         else 
         {

@@ -7,32 +7,39 @@ public class Enums : MonoBehaviour
      // Enum #1
      // enum Color {blue, red, yellow, green, orange, purple}
 
-     // Enum #2
+     // Enum #2 and 3
      //enum CarMake {Oldsmobile, Chevrolet, Ford, Mazda, Toyota, Dodge}
      //enum CarModel {Alero, Cruze, Tacoma, Mustang, Miata, Viper}
 
-     // Enum #3
+     // Enum #4
      // enum Halo {chief, cortana, halsey, johnson, arbiter, keyes}
 
-     // Enum #4
+     // Enum #5 and 6
      // enum DragonCharacters {Goku, Vegeta, Gohan, Krillin, Piccolo, Trunks}
      // enum DragonPowers {Kahmehameha, Finalflash, Ultimateform, SolarFlare, SpecialBeamCannon, Masenko}
 
-     // Enum #5
+     // Enum #7
      // enum Weapon {Bow, Gun, Knife, Spear, Slingshot, Cannon}
+
+     // Enum #8 and 9
+     // enum FoodTypes {Pizza, Spagehetti, Cake, Chips, Soda, Water}
+     // enum FoodCharac {Cheese, Sauce, Frosting, Crunch, Suger, Healthy}
+
+     //Enum #10 
+     // enum Generation {PS1, PS2, PS3, PS4, PS5, PSP}
 
 
     // Start is called before the first frame update
     void Start()
     {
-        // Enum #6 Goes with #1
+     
         /* Color paint;
         paint = Color.blue;
 
         print(paint);
         */
 
-        // Enum #7 Goes with #2
+       
          /*
          CarMake make;
          CarModel model;
@@ -45,7 +52,7 @@ public class Enums : MonoBehaviour
          Recall(CarMake.Mazda, CarModel.Miata);
         */
 
-        // Enum #8 Goes with # 3
+     
         /*
         Halo character;
         character = Halo.arbiter;
@@ -53,7 +60,7 @@ public class Enums : MonoBehaviour
         print(character);
         */
 
-        // Enum #9 Goes with #4
+    
         /*
          DragonCharacters name;
          DragonPowers attribute;
@@ -66,12 +73,29 @@ public class Enums : MonoBehaviour
          Recall(DragonCharacters.Goku, DragonPowers.Kahmehameha);
          */
 
-        // Enum #10 Goes with #5
+ 
         /*
          Weapon type;
          type = Weapon.Bow;
 
          print(type);
+         */
+
+       
+        /*
+         FoodTypes name;
+         FoodCharac special;
+
+         name = FoodTypes.Pizza;
+         special = FoodCharac.Cheese;
+
+         Recall(FoodTypes.Pizza, FoodCharac.Cheese);
+         */
+
+        /* Generation Style;
+        Style = Generation.PS5;
+
+         print(Generation);
          */
 
 
@@ -85,7 +109,7 @@ public class Enums : MonoBehaviour
 
     void Recall()
     {
-        // This Recall Goes with # 2 and 7 
+       
         /*
         if(make == CarMake.Oldsmobile && model == CarModel.Alero)
         {
@@ -100,7 +124,7 @@ public class Enums : MonoBehaviour
             print("There is no recall notice for your vehicle make and model");
         }
         */
-        // This Recall goes with # 4 and 9
+        
         /*
          if(name == DragonCharacters.Vegeta && attribute == DragonPowers.Finalflash)
         {
@@ -113,6 +137,21 @@ public class Enums : MonoBehaviour
         else
         {
             print("There is no recall for any of the name and power that is being used");
+        }
+        */
+          
+        /*
+         if(name == FoodTypes.Cake && Charac == FoodCharac.Frosting)
+        {
+            print("There is a recall that this cake is amazing with frosting");
+        }
+        else if(name == FoodTypes.Chips && Charac == FoodCharac.Crunch)
+        {
+            print("There is a recall that Chips are amazing with some Crunch");
+        }
+        else
+        {
+            print("There is no recall for any of name or Charac for the foods");
         }
         */
     }

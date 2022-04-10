@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     public int curHP;
     public int maxHP;
 
+    public HealthBar healthBar;
+
     
      [Header ("Player Movement")]
     public float moveSpeed = 5f; //Speed at which the player will move
@@ -23,10 +25,18 @@ public class PlayerController : MonoBehaviour
     public int damage; // Damage amount dealt to enemy
     public LayerMask enemyLayer;
 
+    [Header("Inventory")]
+    public int keys;
+    public int coins;
+    public int gems;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        curHP = maxHP;
+        healthBar.SetHealth(maxHP);
     }
 
     // Update is called once per frame
@@ -78,6 +88,8 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage(int damage)
     {
         curHP -= damage;
+        //Updates the Health Bar
+        healthBar.SetHealth(curHP);
         
         if(curHP <= 0)
         {
